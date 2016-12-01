@@ -1,0 +1,15 @@
+# Ignore everything
+*
+!*/
+
+# But not these files...
+!.gitignore
+!*.tex
+!*.pdf
+!*.png
+!*.jpg
+!*.xls*
+!*.eps
+!*.JPG
+# ...even if they are in subdirectories
+!*/
