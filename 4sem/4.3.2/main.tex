@@ -1,0 +1,63 @@
+\documentclass{../tools/letask}
+\usepackage{../tools/iunits}
+\setlist{resume, leftmargin=1cm, topsep=0cm, resume}
+
+\newcommand{\LabTitle}{Дифракция света\\[0.1cm]на ультразвуковой волне в жидкости}
+
+\begin{document}
+\input{../tools/cover}
+
+\section{Цель работы}
+\begin{enumerate}
+\item
+Изучение дифракции света на \textsf{фазовой решётке}, сформированной акустической волной:
+\begin{enumerate}
+\item Наблюдение дифракции Фраунгофера
+\item Наблюдение методом тёмного поля
+\end{enumerate}
+
+\end{enumerate}
+\section{Основная теория}
+\subsection{Параметры акустического транспаранта}
+Распределение показателя преломления:
+$$n=n_0(1+m\cos \Omega x).$$
+Фазовое распределение на задней поверхности:
+$$\varphi = knL = \varphi_0(1+m\cos \Omega x).$$
+
+Условие тонкого транспаранта:
+$$m \ll \dfrac{\Lambda}{L} \sqrt{\dfrac{\lambda}{L}},$$
+где 
+\begin{align*}
+&\Lambda \text{ -- длина УЗ волны,}\\
+&\lambda \text{ -- длина световой волны,}\\
+&\Omega \text{ -- волновое число УЗ волны,}\\
+&L \text{ -- толщина слоя жидкости в кювете.}
+\end{align*}
+
+\subsection{Фурье-спектр фазово модулированной волны}
+Световое поле состоит из плоских волн, распространяющихся под углами 
+$$\Lambda \sin \theta_m = m \lambda, \quad m \in \mathbb{Z}.$$
+
+\subsection{Определение скорости рапространения ультразвуковых волн}
+Определяя углы $\theta_m$ по расстоянию между дифракционными полосами $l_m$
+$$l_m = mf\dfrac{\lambda}{\Lambda},$$
+определим длину УЗ волны $\Lambda$.
+При измерениях методом тёмного поля $\Lambda$ измеряется непосредственно как удвоенное расстояние между тёмными полосами.
+Скорость УЗ волны $\upsilon$ может быть вычислена, таким образом, при известной частоте генератора:
+$$\upsilon= \Lambda \nu.$$
+
+\section{Схемы установки}
+\subsection{Дифракция на фазовой решётке}
+\begin{figure}[H]
+\centering
+\includegraphics[width =\textwidth]{1}
+\caption{Схема первой установки}
+\end{figure}
+\subsection{Метод тёмного поля}
+\begin{figure}[H]
+\centering
+\includegraphics[width =\textwidth]{2}
+\caption{Схема второй установки}
+\end{figure}
+
+\end{document}
